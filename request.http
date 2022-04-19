@@ -1,0 +1,32 @@
+POST http://localhost:1706/calcular HTTP/1.1
+content-type: application/json
+
+{
+  "objective": {
+    "a": 5,
+    "z": 10,
+    "d": 15,
+    "x": 20,
+    "b": 3
+  },
+  "constraints": [
+    {
+      "namedVector": { 
+          "a": 2, "b": 1, "d": 10, "x": 20, "z": 3 
+          },
+      "constraint": "<=",
+      "constant": 100
+    },
+    {
+      "namedVector": { "a": 3, "b": 5, "d": 7, "x": 11, "z": 13 },
+      "constraint": ">=",
+      "constant": 200
+    },
+    {
+      "namedVector": { "a": 17, "b": 19, "d": 21, "x": 23, "z": 29 },
+      "constraint": "<=",
+      "constant": 300
+    }
+  ],
+  "optimizationType": "max"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "simplex-ruan",
+  "version": "1.0.0",
+  "description": "SIMPLEX - OT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Ruan Kenned",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "simple-simplex": "^1.0.1",
+    "yasmij": "^0.2.6"
+  }
+}
